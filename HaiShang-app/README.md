@@ -34,34 +34,35 @@ ________________________
 ## DB
 
 
-- User
-- Project
-- UserProjects
-- UserTasks
-- UpLink
+- HSUser
+- HSProject
+- HSUserProjects
+- HSUserTasks
+- HSUpLink
 
   
 #### 详情
-- User
+- HSUser
+	- id
 	- username
 	- password
-- Project
+- HSProject
 	- name
 	- type: 0 default, 1 user-created, 2 recommend
 	- createdUserId:
-- UserProjects
+- HSUserProjects
 	- userId
 	- projectId
 	- upCyclePoint:
 	- upCycleTime: month, 季度, half-year, year
 	- upLink:
-- UserTasks
+- HSUserTasks
 	- userId
 	- projectId
 	- taskTime
 	- isUpped
 	- remark
-- UpLink
+- HSUpLink
 	- link
 	- upForProjectId
 	- detail
