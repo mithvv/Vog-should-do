@@ -3,11 +3,4 @@ platform :ios, '8.0'
 
 pod 'AVOSCloud'
 
-target 'HaiShang' do
-
-end
-
-target 'HaiShangTests' do
-
-end
-
+pod 'BlocksKit', '~>2.2'
