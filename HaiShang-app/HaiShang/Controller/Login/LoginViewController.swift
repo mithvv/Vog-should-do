@@ -9,6 +9,13 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var registerSubView: UIView!
+    @IBOutlet weak var changeStatusBtn: UIButton!
+    @IBOutlet weak var mainBtn: UIButton!
+    
+    var isLogin : Bool = false;
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +43,20 @@ class LoginViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
+    }
+    
+    @IBAction func changeStatusBtnAction(sender: AnyObject)
+    {
+        self.isLogin = !isLogin
+        self.resetLoginOrRegisterUI()
+    }
+    
+    func resetLoginOrRegisterUI()
+    {
+        self.title = isLogin ? "登录" : "注册"
+        registerSubView.hidden = isLogin
+        changeStatusBtn.setTitle(isLogin ? "没有帐号？去注册" : "已有帐号，直接登录？", forState:UIControlState.Normal);
+        mainBtn.setTitle(isLogin ? "登录" : "注册", forState:UIControlState.Normal)
     }
 
 }

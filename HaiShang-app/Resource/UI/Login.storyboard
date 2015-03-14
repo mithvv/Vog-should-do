@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yn5-ds-BGB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yn5-ds-BGB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-4" y="463"/>
         </scene>
-        <!--Login View Controller-->
+        <!--注册-->
         <scene sceneID="ar7-PN-nSj">
             <objects>
                 <viewController id="e1d-6z-Bvi" customClass="LoginViewController" customModule="HaiShang" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,6 +102,9 @@
                                 <state key="normal" title="已有帐号？直接登录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeStatusBtnAction:" destination="e1d-6z-Bvi" eventType="touchUpInside" id="b5e-F9-IpB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ED-zo-bjR">
                                 <rect key="frame" x="200" y="449" width="200" height="30"/>
@@ -152,13 +155,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="zzd-PN-Efo">
+                    <navigationItem key="navigationItem" title="注册" id="zzd-PN-Efo">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="xIY-na-E7N">
                             <connections>
                                 <action selector="closeBtnAction:" destination="e1d-6z-Bvi" id="iig-6L-Jky"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="changeStatusBtn" destination="Wu0-6J-w6X" id="QMg-gL-qz0"/>
+                        <outlet property="mainBtn" destination="3ED-zo-bjR" id="dIU-MQ-4ia"/>
+                        <outlet property="registerSubView" destination="N13-sC-hdr" id="iJV-a6-v9H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kcu-Km-f7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

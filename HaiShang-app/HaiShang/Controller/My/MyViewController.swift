@@ -11,6 +11,7 @@ import UIKit
 class MyViewController: UIViewController {
 
     @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var headerView: UIView!
     
     
     override func viewDidLoad() {
@@ -19,11 +20,13 @@ class MyViewController: UIViewController {
         let loginNav : UINavigationController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as UINavigationController
         
         
-        userImageView.bk_whenTapped { () -> Void in
+        headerView.bk_whenTapped { () -> Void in
             self.presentViewController(loginNav, animated: true) { () -> Void in
                 
             }
         }
+        
+        
 
     }
 
