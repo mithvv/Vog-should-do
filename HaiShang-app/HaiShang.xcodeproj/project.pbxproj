@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */; };
+		0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */; };
+		0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */; };
 		0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F64D21A9E378900611EC4 /* AppDelegate.swift */; };
 		0D2F64DA1A9E378900611EC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64D81A9E378900611EC4 /* Main.storyboard */; };
 		0D2F64DC1A9E378900611EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64DB1A9E378900611EC4 /* Images.xcassets */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserViewModel.swift; path = ViewModel/HSUserViewModel.swift; sourceTree = "<group>"; };
+		0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserProvider.swift; path = Provider/HSUserProvider.swift; sourceTree = "<group>"; };
+		0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSTabBarController.swift; path = Controller/Common/HSTabBarController.swift; sourceTree = "<group>"; };
 		0D2F64CD1A9E378900611EC4 /* HaiShang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiShang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2F64D11A9E378900611EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2F64D21A9E378900611EC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0EC4071AB719BB007FA0D2 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
 		0D2F64C41A9E378900611EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +149,7 @@
 		0D6DA07B1AB1E21300CCFAC6 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				0D0EC4071AB719BB007FA0D2 /* Provider */,
 				0D6DA07E1AB1E24600CCFAC6 /* Model */,
 			);
 			name = Store;
@@ -146,6 +161,7 @@
 				0D6DA08B1AB1E71200CCFAC6 /* Login */,
 				0D6DA0881AB1E59A00CCFAC6 /* My */,
 				0D6DA0851AB1E37300CCFAC6 /* Project */,
+				0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -153,6 +169,7 @@
 		0D6DA07D1AB1E23300CCFAC6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -361,8 +378,11 @@
 			files = (
 				0D6DA0801AB1E29000CCFAC6 /* HSUser.swift in Sources */,
 				0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */,
+				0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */,
 				0D6DA08A1AB1E5AE00CCFAC6 /* MyViewController.swift in Sources */,
 				0D6DA08D1AB1E74600CCFAC6 /* LoginViewController.swift in Sources */,
+				0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */,
+				0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */,
 				0D6DA0871AB1E52B00CCFAC6 /* ProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
