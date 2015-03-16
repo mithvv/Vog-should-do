@@ -6,3 +6,5 @@
 
 #import "BlocksKit.h"
 #import "BlocksKit+UIKit.h"
+
+#import <AVOSCloud/AVOSCloud.h>

@@ -18,7 +18,7 @@ class HSTabBarController: UITabBarController {
     override func viewDidLayoutSubviews() {
         if (HSUserProvider.sharedInstance.hasLogin() == false) {
             let loginNav : UINavigationController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as UINavigationController
-            self.presentViewController(loginNav, animated: true, completion: nil)
+            self.presentViewController(loginNav, animated: false, completion: nil)
         }
     }
 

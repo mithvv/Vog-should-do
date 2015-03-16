@@ -10,6 +10,11 @@
 		0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */; };
 		0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */; };
 		0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */; };
+		0D0EC40D1AB72435007FA0D2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC40C1AB72435007FA0D2 /* SystemConfiguration.framework */; };
+		0D0EC40F1AB7243E007FA0D2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC40E1AB7243E007FA0D2 /* MobileCoreServices.framework */; };
+		0D0EC4111AB72444007FA0D2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4101AB72444007FA0D2 /* CoreTelephony.framework */; };
+		0D0EC4131AB7244D007FA0D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4121AB7244D007FA0D2 /* CoreLocation.framework */; };
+		0D0EC4151AB72457007FA0D2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4141AB72457007FA0D2 /* libicucore.dylib */; };
 		0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F64D21A9E378900611EC4 /* AppDelegate.swift */; };
 		0D2F64DA1A9E378900611EC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64D81A9E378900611EC4 /* Main.storyboard */; };
 		0D2F64DC1A9E378900611EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64DB1A9E378900611EC4 /* Images.xcassets */; };
@@ -37,6 +42,11 @@
 		0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserViewModel.swift; path = ViewModel/HSUserViewModel.swift; sourceTree = "<group>"; };
 		0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserProvider.swift; path = Provider/HSUserProvider.swift; sourceTree = "<group>"; };
 		0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSTabBarController.swift; path = Controller/Common/HSTabBarController.swift; sourceTree = "<group>"; };
+		0D0EC40C1AB72435007FA0D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D0EC40E1AB7243E007FA0D2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0D0EC4101AB72444007FA0D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0D0EC4121AB7244D007FA0D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0D0EC4141AB72457007FA0D2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		0D2F64CD1A9E378900611EC4 /* HaiShang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiShang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2F64D11A9E378900611EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2F64D21A9E378900611EC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0EC4151AB72457007FA0D2 /* libicucore.dylib in Frameworks */,
+				0D0EC4131AB7244D007FA0D2 /* CoreLocation.framework in Frameworks */,
+				0D0EC4111AB72444007FA0D2 /* CoreTelephony.framework in Frameworks */,
+				0D0EC40F1AB7243E007FA0D2 /* MobileCoreServices.framework in Frameworks */,
+				0D0EC40D1AB72435007FA0D2 /* SystemConfiguration.framework in Frameworks */,
 				3044B549A485E9F20999BE26 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +240,11 @@
 		56F95E65E011E45CA0687EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D0EC4141AB72457007FA0D2 /* libicucore.dylib */,
+				0D0EC4121AB7244D007FA0D2 /* CoreLocation.framework */,
+				0D0EC4101AB72444007FA0D2 /* CoreTelephony.framework */,
+				0D0EC40E1AB7243E007FA0D2 /* MobileCoreServices.framework */,
+				0D0EC40C1AB72435007FA0D2 /* SystemConfiguration.framework */,
 				B31DC638BA115403E62D7133 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -511,9 +531,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HaiShang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HaiShang/HaiShang-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -526,9 +548,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HaiShang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HaiShang/HaiShang-Bridging-Header.h";
 			};
 			name = Release;

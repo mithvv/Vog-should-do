@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        AVOSCloud.setApplicationId("21yqrg9kr23tc3bk9tiyz0wj359rs2ft7xmvhbyc4xn9k9ye"
+, clientKey: "p8uiycu2dalaj6t4houzu09i58fly6fsqtri04x3h4hr470u")
+        
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         return true
     }
@@ -42,6 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
+    {
+        
+    }
 
 }
 
