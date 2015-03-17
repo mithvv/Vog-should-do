@@ -38,31 +38,35 @@ ________________________
 - HSProject
 - HSUserProjects
 - HSUserTasks
-- HSUpLink
+- HSTutorialLink
 
   
 #### 详情
 - HSUser
-	- id
+	- ID
 	- username
 	- password
 - HSProject
 	- name
 	- type: 0 default, 1 user-created, 2 recommend
-	- createdUserId:
+	- createdUserID:
 - HSUserProjects
-	- userId
-	- projectId
+	- userID
+	- projectID
 	- upCyclePoint:
 	- upCycleTime: month, 季度, half-year, year
 	- upLink:
 - HSUserTasks
-	- userId
-	- projectId
+	- userID
+	- projectID
 	- taskTime
 	- isUpped
 	- remark
-- HSUpLink
+- HSTutorialLink
 	- link
-	- upForProjectId
+	- title
+	- upForProjectID
 	- detail
+- HSTutorialProjectRel
+	- tutorialID
+	- projectID
