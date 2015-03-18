@@ -20,7 +20,12 @@ class HSUserProvider: NSObject {
     
     func hasLogin() -> Bool
     {
-        return false
+        if(AVUser.currentUser() != nil) {
+            return true
+        } else {
+            return false
+        }
+
     }
 
 }

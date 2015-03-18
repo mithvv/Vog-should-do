@@ -123,6 +123,7 @@
                     <connections>
                         <outlet property="headerView" destination="o2z-6z-lJI" id="MR9-re-q8K"/>
                         <outlet property="userImageView" destination="1wF-Jc-zeo" id="8jv-wn-vAA"/>
+                        <outlet property="usernameLabel" destination="KFM-IT-my2" id="bcw-lE-7XU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTn-Lu-7Ci" userLabel="First Responder" sceneMemberID="firstResponder"/>

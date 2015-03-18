@@ -12,6 +12,7 @@ class MyViewController: UIViewController {
 
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var usernameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class MyViewController: UIViewController {
             }
         }
         
-        
+        usernameLabel.text = AVUser.currentUser().username.isEmpty ? "登录" : AVUser.currentUser().username
 
     }
 
