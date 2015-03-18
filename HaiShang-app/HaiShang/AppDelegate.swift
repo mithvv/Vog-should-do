@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        let settings : UIUserNotificationSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, categories: nil)
+        
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+        
         return true
     }
 
@@ -49,7 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
     {
-        
+        let avInstallation : AVInstallation = AVInstallation.currentInstallation()
+        avInstallation.setDeviceTokenFromData(deviceToken)
+        avInstallation.saveInBackground()
     }
 
 }
