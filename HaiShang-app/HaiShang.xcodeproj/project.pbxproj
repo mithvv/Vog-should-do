@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D0B31A31ABC6C8F00A4505B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31A21ABC6C8F00A4505B /* Helper.swift */; };
+		0D0B31A51ABC6DB700A4505B /* HSProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31A41ABC6DB700A4505B /* HSProject.swift */; };
+		0D0B31A71ABC6DD800A4505B /* HSUserProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31A61ABC6DD800A4505B /* HSUserProjects.swift */; };
+		0D0B31AB1ABC6DFB00A4505B /* HSUserTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31AA1ABC6DFB00A4505B /* HSUserTasks.swift */; };
+		0D0B31AD1ABC6E1B00A4505B /* HSLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31AC1ABC6E1B00A4505B /* HSLink.swift */; };
+		0D0B31AF1ABC6E6D00A4505B /* HSLinkTagRel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31AE1ABC6E6D00A4505B /* HSLinkTagRel.swift */; };
+		0D0B31B11ABC6E7C00A4505B /* HSTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31B01ABC6E7C00A4505B /* HSTag.swift */; };
+		0D0B31B31ABC6E9800A4505B /* HSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31B21ABC6E9800A4505B /* HSLocation.swift */; };
+		0D0B31B51ABC6EE400A4505B /* HSProjectTagRel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31B41ABC6EE400A4505B /* HSProjectTagRel.swift */; };
 		0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */; };
 		0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */; };
 		0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */; };
@@ -41,6 +49,14 @@
 
 /* Begin PBXFileReference section */
 		0D0B31A21ABC6C8F00A4505B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = FORLibaray/Helper.swift; sourceTree = "<group>"; };
+		0D0B31A41ABC6DB700A4505B /* HSProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSProject.swift; path = Store/Model/HSProject.swift; sourceTree = "<group>"; };
+		0D0B31A61ABC6DD800A4505B /* HSUserProjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserProjects.swift; path = Store/Model/HSUserProjects.swift; sourceTree = "<group>"; };
+		0D0B31AA1ABC6DFB00A4505B /* HSUserTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserTasks.swift; path = Store/Model/HSUserTasks.swift; sourceTree = "<group>"; };
+		0D0B31AC1ABC6E1B00A4505B /* HSLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLink.swift; path = Store/Model/HSLink.swift; sourceTree = "<group>"; };
+		0D0B31AE1ABC6E6D00A4505B /* HSLinkTagRel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLinkTagRel.swift; path = Store/Model/HSLinkTagRel.swift; sourceTree = "<group>"; };
+		0D0B31B01ABC6E7C00A4505B /* HSTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSTag.swift; path = Store/Model/HSTag.swift; sourceTree = "<group>"; };
+		0D0B31B21ABC6E9800A4505B /* HSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSLocation.swift; path = Store/Model/HSLocation.swift; sourceTree = "<group>"; };
+		0D0B31B41ABC6EE400A4505B /* HSProjectTagRel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSProjectTagRel.swift; path = Store/Model/HSProjectTagRel.swift; sourceTree = "<group>"; };
 		0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserViewModel.swift; path = ViewModel/HSUserViewModel.swift; sourceTree = "<group>"; };
 		0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserProvider.swift; path = Provider/HSUserProvider.swift; sourceTree = "<group>"; };
 		0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSTabBarController.swift; path = Controller/Common/HSTabBarController.swift; sourceTree = "<group>"; };
@@ -204,6 +220,14 @@
 			isa = PBXGroup;
 			children = (
 				0D6DA07F1AB1E29000CCFAC6 /* HSUser.swift */,
+				0D0B31A41ABC6DB700A4505B /* HSProject.swift */,
+				0D0B31A61ABC6DD800A4505B /* HSUserProjects.swift */,
+				0D0B31AC1ABC6E1B00A4505B /* HSLink.swift */,
+				0D0B31B01ABC6E7C00A4505B /* HSTag.swift */,
+				0D0B31B21ABC6E9800A4505B /* HSLocation.swift */,
+				0D0B31AA1ABC6DFB00A4505B /* HSUserTasks.swift */,
+				0D0B31AE1ABC6E6D00A4505B /* HSLinkTagRel.swift */,
+				0D0B31B41ABC6EE400A4505B /* HSProjectTagRel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -409,13 +433,21 @@
 			files = (
 				0D6DA0801AB1E29000CCFAC6 /* HSUser.swift in Sources */,
 				0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */,
+				0D0B31A51ABC6DB700A4505B /* HSProject.swift in Sources */,
+				0D0B31AF1ABC6E6D00A4505B /* HSLinkTagRel.swift in Sources */,
 				0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */,
 				0D6DA08A1AB1E5AE00CCFAC6 /* MyViewController.swift in Sources */,
+				0D0B31B51ABC6EE400A4505B /* HSProjectTagRel.swift in Sources */,
 				0D6DA08D1AB1E74600CCFAC6 /* LoginViewController.swift in Sources */,
 				0D0B31A31ABC6C8F00A4505B /* Helper.swift in Sources */,
+				0D0B31AB1ABC6DFB00A4505B /* HSUserTasks.swift in Sources */,
 				0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */,
+				0D0B31A71ABC6DD800A4505B /* HSUserProjects.swift in Sources */,
 				0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */,
+				0D0B31B11ABC6E7C00A4505B /* HSTag.swift in Sources */,
 				0D6DA0871AB1E52B00CCFAC6 /* ProjectViewController.swift in Sources */,
+				0D0B31AD1ABC6E1B00A4505B /* HSLink.swift in Sources */,
+				0D0B31B31ABC6E9800A4505B /* HSLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
