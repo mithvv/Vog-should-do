@@ -24,6 +24,8 @@
 		0D0EC4111AB72444007FA0D2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4101AB72444007FA0D2 /* CoreTelephony.framework */; };
 		0D0EC4131AB7244D007FA0D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4121AB7244D007FA0D2 /* CoreLocation.framework */; };
 		0D0EC4151AB72457007FA0D2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EC4141AB72457007FA0D2 /* libicucore.dylib */; };
+		0D29E0A21ABC8403000DE8B9 /* HSCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29E0A11ABC8403000DE8B9 /* HSCompany.swift */; };
+		0D29E0A41ABC8462000DE8B9 /* HSProjectCompanys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29E0A31ABC8462000DE8B9 /* HSProjectCompanys.swift */; };
 		0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F64D21A9E378900611EC4 /* AppDelegate.swift */; };
 		0D2F64DA1A9E378900611EC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64D81A9E378900611EC4 /* Main.storyboard */; };
 		0D2F64DC1A9E378900611EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F64DB1A9E378900611EC4 /* Images.xcassets */; };
@@ -65,6 +67,8 @@
 		0D0EC4101AB72444007FA0D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0D0EC4121AB7244D007FA0D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0D0EC4141AB72457007FA0D2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0D29E0A11ABC8403000DE8B9 /* HSCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSCompany.swift; path = Store/Model/HSCompany.swift; sourceTree = "<group>"; };
+		0D29E0A31ABC8462000DE8B9 /* HSProjectCompanys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSProjectCompanys.swift; path = Store/Model/HSProjectCompanys.swift; sourceTree = "<group>"; };
 		0D2F64CD1A9E378900611EC4 /* HaiShang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiShang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2F64D11A9E378900611EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2F64D21A9E378900611EC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -222,11 +226,13 @@
 				0D6DA07F1AB1E29000CCFAC6 /* HSUser.swift */,
 				0D0B31A41ABC6DB700A4505B /* HSProject.swift */,
 				0D0B31A61ABC6DD800A4505B /* HSUserProjects.swift */,
+				0D29E0A11ABC8403000DE8B9 /* HSCompany.swift */,
 				0D0B31AC1ABC6E1B00A4505B /* HSLink.swift */,
 				0D0B31B01ABC6E7C00A4505B /* HSTag.swift */,
 				0D0B31B21ABC6E9800A4505B /* HSLocation.swift */,
 				0D0B31AA1ABC6DFB00A4505B /* HSUserTasks.swift */,
 				0D0B31AE1ABC6E6D00A4505B /* HSLinkTagRel.swift */,
+				0D29E0A31ABC8462000DE8B9 /* HSProjectCompanys.swift */,
 				0D0B31B41ABC6EE400A4505B /* HSProjectTagRel.swift */,
 			);
 			name = Model;
@@ -431,11 +437,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D29E0A21ABC8403000DE8B9 /* HSCompany.swift in Sources */,
 				0D6DA0801AB1E29000CCFAC6 /* HSUser.swift in Sources */,
 				0D2F64D31A9E378900611EC4 /* AppDelegate.swift in Sources */,
 				0D0B31A51ABC6DB700A4505B /* HSProject.swift in Sources */,
 				0D0B31AF1ABC6E6D00A4505B /* HSLinkTagRel.swift in Sources */,
 				0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */,
+				0D29E0A41ABC8462000DE8B9 /* HSProjectCompanys.swift in Sources */,
 				0D6DA08A1AB1E5AE00CCFAC6 /* MyViewController.swift in Sources */,
 				0D0B31B51ABC6EE400A4505B /* HSProjectTagRel.swift in Sources */,
 				0D6DA08D1AB1E74600CCFAC6 /* LoginViewController.swift in Sources */,
