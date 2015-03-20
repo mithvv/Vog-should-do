@@ -13,14 +13,28 @@ class HSTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
     }
     
     override func viewDidLayoutSubviews() {
-        if (HSUserProvider.sharedInstance.hasLogin() == false) {
-            let loginNav : UINavigationController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as UINavigationController
-            self.presentViewController(loginNav, animated: false, completion: nil)
-        }
+
     }
+    
+    override func viewWillLayoutSubviews() {
+
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        
+        
+
+
+    }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -25,6 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
+
+        
+        self.window?.makeKeyAndVisible()
+        
+        
+        if (HSUserProvider.sharedInstance.hasLogin() == false) {
+            
+            delay(0.1, { () -> () in
+                let loginNav : UINavigationController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as UINavigationController
+                self.window?.rootViewController?.presentViewController(loginNav, animated: false, completion:nil)
+            })
+        }
         
         return true
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yn5-ds-BGB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yn5-ds-BGB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -48,6 +48,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3PN-Ck-ux3"/>
+                                                <exclude reference="5fq-qT-WIv"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-Z8-yU5">
                                         <rect key="frame" x="200" y="125" width="200" height="30"/>
@@ -140,53 +146,36 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="N13-sC-hdr" firstAttribute="top" secondItem="g9P-Z8-yU5" secondAttribute="bottom" constant="29" id="1Iq-EN-Utc"/>
-                                    <constraint firstAttribute="centerY" secondItem="Wu0-6J-w6X" secondAttribute="centerY" constant="-201" id="46C-VS-dl9"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="top" secondItem="3ED-zo-bjR" secondAttribute="bottom" constant="71" id="61p-8P-8OV"/>
-                                    <constraint firstAttribute="centerX" secondItem="g9P-Z8-yU5" secondAttribute="centerX" id="66U-A2-BEa"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="top" secondItem="Rtz-cs-ooT" secondAttribute="top" constant="562" id="70J-uc-bsh"/>
                                     <constraint firstItem="3ED-zo-bjR" firstAttribute="top" secondItem="N13-sC-hdr" secondAttribute="bottom" constant="21" id="864-ZR-4hY"/>
                                     <constraint firstItem="Wu0-6J-w6X" firstAttribute="trailing" secondItem="3ED-zo-bjR" secondAttribute="trailing" id="8ft-s5-exl"/>
-                                    <constraint firstItem="N13-sC-hdr" firstAttribute="leading" secondItem="Rtz-cs-ooT" secondAttribute="leading" constant="16" id="CKI-a8-jar"/>
                                     <constraint firstItem="YaN-0J-quR" firstAttribute="width" secondItem="KKC-pk-TKr" secondAttribute="width" id="Ckg-e0-EoD"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="trailing" secondItem="3ED-zo-bjR" secondAttribute="trailing" id="GFP-6P-kZc"/>
                                     <constraint firstItem="Wu0-6J-w6X" firstAttribute="leading" secondItem="3ED-zo-bjR" secondAttribute="leading" id="Izm-6U-suk"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="bottom" secondItem="Rtz-cs-ooT" secondAttribute="bottomMargin" id="JPf-as-JXB"/>
                                     <constraint firstItem="YaN-0J-quR" firstAttribute="height" secondItem="KKC-pk-TKr" secondAttribute="height" id="KpS-KN-Qc6"/>
                                     <constraint firstItem="3ED-zo-bjR" firstAttribute="width" secondItem="YaN-0J-quR" secondAttribute="width" id="NYr-ub-dwa"/>
                                     <constraint firstItem="3ED-zo-bjR" firstAttribute="height" secondItem="YaN-0J-quR" secondAttribute="height" id="OhO-6J-6ap"/>
+                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="centerX" secondItem="Rtz-cs-ooT" secondAttribute="centerX" id="OnM-Xy-lBH"/>
                                     <constraint firstItem="g9P-Z8-yU5" firstAttribute="height" secondItem="YaN-0J-quR" secondAttribute="height" id="OzM-Dd-i7R"/>
-                                    <constraint firstAttribute="bottom" secondItem="N13-sC-hdr" secondAttribute="bottom" constant="172" id="Rqp-e8-ym5"/>
-                                    <constraint firstAttribute="trailing" secondItem="N13-sC-hdr" secondAttribute="trailing" constant="16" id="VQm-k7-fe2"/>
+                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="top" secondItem="Rtz-cs-ooT" secondAttribute="top" constant="562" id="PPd-Cc-cYO"/>
                                     <constraint firstItem="D2C-xj-mWu" firstAttribute="width" secondItem="YaN-0J-quR" secondAttribute="width" id="Z2i-JX-0FK"/>
                                     <constraint firstItem="D2C-xj-mWu" firstAttribute="centerX" secondItem="g9P-Z8-yU5" secondAttribute="centerX" id="ctu-iD-RLd"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="top" secondItem="3ED-zo-bjR" secondAttribute="bottom" constant="71" id="fCG-IR-UjU"/>
-                                    <constraint firstAttribute="centerX" secondItem="3ED-zo-bjR" secondAttribute="centerX" id="hL3-U4-Oux"/>
+                                    <constraint firstItem="g9P-Z8-yU5" firstAttribute="leading" secondItem="3ED-zo-bjR" secondAttribute="leading" id="gUS-yU-jVj"/>
+                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="bottom" secondItem="Rtz-cs-ooT" secondAttribute="bottomMargin" id="jAk-I6-QEX"/>
                                     <constraint firstItem="g9P-Z8-yU5" firstAttribute="width" secondItem="YaN-0J-quR" secondAttribute="width" id="jBP-zv-RzU"/>
-                                    <constraint firstAttribute="centerX" secondItem="YaN-0J-quR" secondAttribute="centerX" id="lsf-be-dIr"/>
                                     <constraint firstItem="D2C-xj-mWu" firstAttribute="height" secondItem="YaN-0J-quR" secondAttribute="height" id="oTr-Tx-BdG"/>
-                                    <constraint firstItem="Wu0-6J-w6X" firstAttribute="leading" secondItem="3ED-zo-bjR" secondAttribute="leading" id="sJe-Fw-X0y"/>
+                                    <constraint firstAttribute="trailing" secondItem="N13-sC-hdr" secondAttribute="trailing" constant="16" id="t19-YN-ywG"/>
                                     <constraint firstItem="g9P-Z8-yU5" firstAttribute="top" secondItem="YaN-0J-quR" secondAttribute="bottom" constant="15" id="uHj-zZ-96H"/>
+                                    <constraint firstItem="g9P-Z8-yU5" firstAttribute="leading" secondItem="YaN-0J-quR" secondAttribute="leading" id="utf-i6-gcP"/>
                                     <constraint firstItem="N13-sC-hdr" firstAttribute="centerX" secondItem="3ED-zo-bjR" secondAttribute="centerX" id="we2-EL-h6z"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Rqp-e8-ym5"/>
-                                        <exclude reference="46C-VS-dl9"/>
-                                        <exclude reference="61p-8P-8OV"/>
-                                        <exclude reference="GFP-6P-kZc"/>
-                                        <exclude reference="fCG-IR-UjU"/>
-                                        <exclude reference="sJe-Fw-X0y"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YaN-0J-quR" firstAttribute="top" secondItem="szD-Hn-7g1" secondAttribute="bottom" constant="16" id="3fP-X7-iA3"/>
-                            <constraint firstItem="Rtz-cs-ooT" firstAttribute="top" secondItem="szD-Hn-7g1" secondAttribute="bottom" constant="-64" id="Hvd-3i-Szp"/>
-                            <constraint firstItem="Qy6-xO-BfT" firstAttribute="top" secondItem="Rtz-cs-ooT" secondAttribute="bottom" id="Z5h-PX-0Xy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rtz-cs-ooT" secondAttribute="trailing" constant="-16" id="jks-q3-u25"/>
-                            <constraint firstItem="Rtz-cs-ooT" firstAttribute="leading" secondItem="88P-c9-UWp" secondAttribute="leadingMargin" constant="-16" id="xav-VW-v7L"/>
+                            <constraint firstItem="Rtz-cs-ooT" firstAttribute="leading" secondItem="88P-c9-UWp" secondAttribute="leading" id="8op-1j-qH6"/>
+                            <constraint firstAttribute="trailing" secondItem="Rtz-cs-ooT" secondAttribute="trailing" id="G5s-qE-AQx"/>
+                            <constraint firstItem="Rtz-cs-ooT" firstAttribute="top" secondItem="88P-c9-UWp" secondAttribute="top" id="JEB-bw-7f5"/>
+                            <constraint firstItem="Rtz-cs-ooT" firstAttribute="bottom" secondItem="Qy6-xO-BfT" secondAttribute="top" id="JVR-qU-wYn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="zzd-PN-Efo">

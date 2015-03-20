@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0B31A31ABC6C8F00A4505B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B31A21ABC6C8F00A4505B /* Helper.swift */; };
 		0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */; };
 		0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */; };
 		0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0B31A21ABC6C8F00A4505B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = FORLibaray/Helper.swift; sourceTree = "<group>"; };
 		0D0EC4051AB719A4007FA0D2 /* HSUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserViewModel.swift; path = ViewModel/HSUserViewModel.swift; sourceTree = "<group>"; };
 		0D0EC4081AB719DA007FA0D2 /* HSUserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSUserProvider.swift; path = Provider/HSUserProvider.swift; sourceTree = "<group>"; };
 		0D0EC40A1AB72069007FA0D2 /* HSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSTabBarController.swift; path = Controller/Common/HSTabBarController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0B31A11ABC6C5C00A4505B /* FORLibaray */ = {
+			isa = PBXGroup;
+			children = (
+				0D0B31A21ABC6C8F00A4505B /* Helper.swift */,
+			);
+			name = FORLibaray;
+			sourceTree = "<group>";
+		};
 		0D0EC4071AB719BB007FA0D2 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		0D2F64C41A9E378900611EC4 = {
 			isa = PBXGroup;
 			children = (
+				0D0B31A11ABC6C5C00A4505B /* FORLibaray */,
 				0D6DA08E1AB1E75400CCFAC6 /* Resource */,
 				0D2F64CF1A9E378900611EC4 /* HaiShang */,
 				0D2F64E71A9E378900611EC4 /* HaiShangTests */,
@@ -401,6 +412,7 @@
 				0D0EC4091AB719DA007FA0D2 /* HSUserProvider.swift in Sources */,
 				0D6DA08A1AB1E5AE00CCFAC6 /* MyViewController.swift in Sources */,
 				0D6DA08D1AB1E74600CCFAC6 /* LoginViewController.swift in Sources */,
+				0D0B31A31ABC6C8F00A4505B /* Helper.swift in Sources */,
 				0D0EC4061AB719A4007FA0D2 /* HSUserViewModel.swift in Sources */,
 				0D0EC40B1AB72069007FA0D2 /* HSTabBarController.swift in Sources */,
 				0D6DA0871AB1E52B00CCFAC6 /* ProjectViewController.swift in Sources */,
