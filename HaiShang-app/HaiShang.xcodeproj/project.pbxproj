@@ -129,6 +129,13 @@
 			name = Provider;
 			sourceTree = "<group>";
 		};
+		0D29E0A51ABC86E7000DE8B9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		0D2F64C41A9E378900611EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +272,7 @@
 		0D6DA08E1AB1E75400CCFAC6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0D29E0A51ABC86E7000DE8B9 /* Image */,
 				0D6DA08F1AB1E76300CCFAC6 /* UI */,
 			);
 			name = Resource;
